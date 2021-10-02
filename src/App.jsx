@@ -8,6 +8,7 @@ import CartNew from './components/Cart/CartNew';
 //import ComponenteCount from './components/ItemDetailContainer/ItemDetailContainer';
 //import Cart from './components/Cart/Cart';
 import InicioPage from './components/Inicio/InicioPage';
+import ItemDetail from './components/ItemDetail/ItemDetail';
 
 
 
@@ -35,6 +36,8 @@ function App() {
 
           <Route exact path='/detalle/:id' component={ItemDetailContainer} />
 
+          <Route exact path='/itemDetail' component={ItemDetail} />
+
           <Route exact path='/Cart' component={CartNew} />
 
         </switch>
@@ -46,6 +49,8 @@ function App() {
 
 export default App;
 
+{/* <Route> exact path='/ItemDetail' component={ItemDetail} </> */}
 //<Route exact path='/cart' component={Cart} />
 //<h1 bg-green>Hola Clientes de Anke & Bags</h1>
         //<h3>Gastón </h3>
+

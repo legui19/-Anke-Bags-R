@@ -3,7 +3,7 @@ import "./ItemListContainer.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from "react";
 import ItemList from "../ItemListContainer/ItemList"
-import {useParams} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 
 //***imposible hacer que me lea el arrays con productos ubicados en ../data/productos, aun con los mismos nombres
 //que indico el profe de las varibles/funciones (getFetch, promise(res,rej),etc***
@@ -100,7 +100,10 @@ function ItemListContainer({ greeting }) {
                   <div className="card-body"> {producto.categoria} </div>
                   <img className="w-60" src={producto.Img} alt="foto" />
                   <div className="card-footer"> {producto.precio} </div>
-                 <button className="btn btn-outline-primary btn-block" onClick={() => setLoading(!loading)}>Detalles</button>
+                <Link to='/itemDetail'>
+                  <button className="btn btn-outline-primary btn-block">Detalles</button>
+                </Link>
+                 
 
             </div>)}
         </div>
@@ -134,3 +137,7 @@ export default ItemListContainer;
         //     {loading ? <h3>Cargando página...</h3> : <ItemList productos={productos} />}
 
         // </div>
+
+        //<button className="btn btn-outline-primary btn-block" onClick={() => setLoading(!loading)}>Detalles</button>
+
+        
