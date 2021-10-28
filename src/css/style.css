@@ -1,0 +1,83 @@
+.categoryStyles{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10vh;
+}
+.price{
+    background-color: #000000;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.category-item{
+    transition: box-shadow .3s;
+    background-color: rgb(245, 243, 243);
+    width:400px;
+    padding: 60px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.044),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.058),
+    0 12.5px 10px rgba(0, 0, 0, 0.07),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.082),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.096),
+    0 100px 80px rgba(0, 0, 0, 0.12);  
+    margin: 30px;
+  }
+  
+
+  .category-item:hover{
+    background-color: rgb(219, 250, 219);
+
+  }
+.title-item-category{
+    color:gray;
+    text-transform: uppercase;
+font-size:35px;}
+
+.price-item-category{
+    text-align: center;
+    color: rgb(86, 126, 116);
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.subtitle-category{
+    font-size: 30px;
+    color: rgb(27, 27, 27);
+    font-style: italic;
+    width: 150px;
+    margin:  auto;
+}
+
+
+.btn-category {
+    padding: 15px;
+    width: 150px;
+    height: 75px;
+    margin-top: 40px;
+    margin-left: 0;
+    background-color: rgb(201, 236, 201);
+    color: rgb(63, 63, 63);
+    border-radius: 15px;
+    border: 1px solid gray;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.margin-bottom-category{
+    margin-bottom: 20px;
+
+}
+.margin-bootom-category-200px{
+    margin-bottom: 200px;
+}
+
+.color-violet{
+    color: rgb(170, 150, 168);
+    font-size: 18px;
+    margin-top: 20px;
+}

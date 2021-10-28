@@ -1,0 +1,7 @@
+.img-cw {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    float: right ;
+    margin-right: 20px;   
+}

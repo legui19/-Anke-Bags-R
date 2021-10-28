@@ -1,0 +1,11 @@
+.lista {
+    list-style-type: none;
+    display: flex;
+    position: fixed;
+}
+
+.lista-el {
+    margin: 0px 5px;
+    border: auto solid goldenrod;
+
+}
