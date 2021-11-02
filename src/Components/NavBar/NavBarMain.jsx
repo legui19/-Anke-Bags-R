@@ -8,7 +8,7 @@ const menu2= "¿Como Comprar?";
 const menu3= "Productos";
 const menu4= "Sobre Nosotros";
 const menu5= "Contacto";
-const menu6= "Mi Carrito";
+
     
     return (
         <div>
@@ -23,8 +23,7 @@ const menu6= "Mi Carrito";
 
                     <li className="lista-el">{menu4}</li>
                     <li className="lista-el">{menu5}</li>
-
-                    <li className="lista-el">{menu6}</li>
+                   
                 </ul>
             </nav>
 

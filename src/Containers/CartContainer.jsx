@@ -10,17 +10,22 @@ export default function CartContainer() {
   const [cartItems] = useContext(Context);
   const [total, setTotal] = useState(0);
   const [envio] = useState(100);
+  const [totalQty, setTotalQty] = useState(0);
 
   useEffect(() => {
     cartItems &&
       cartItems.map((item) =>
         setTotal((prevTotal) => prevTotal + item.price * item.qty)
       );
+      cartItems &&
+      cartItems.map((item) =>
+        setTotalQty((prevTotalQty) => prevTotalQty + 1 * item.qty)
+      );
   }, [cartItems]);
  
   return (
     <div>
-      <Cart cartItems={cartItems} total={total} envio={envio} />
+      <Cart cartItems={cartItems} total={total} envio={envio} Cant={totalQty} />
     </div>
   );
 };

@@ -14,6 +14,7 @@ export default function CheckOutContainer() {
   const [total, setTotal] = useState(0);
   const [email, setEmail] = useState("");
   const [conEmail, setConEmail] = useState("");
+  
 
   
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function CheckOutContainer() {
       cartItems.map((item) =>
         setTotal((prevTotal) => prevTotal + item.price * item.qty)
       );
+      
   }, [cartItems]);
 
   const addOrder = () => {
