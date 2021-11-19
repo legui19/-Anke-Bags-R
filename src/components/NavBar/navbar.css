@@ -1,0 +1,156 @@
+.ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.navStyle-inicia{
+    width:100%;
+    min-height:10vh;
+    background-color: #f3cf75;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.navStyle-cerrar{
+    width:100%;
+    min-height:100px;
+    background-color:rgb(164, 166, 172);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-link{
+   margin:0;
+   padding: 10px;
+   font-size: 20px;
+   color:rgb(77, 77, 77);
+   text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.links-nav {
+    padding:15px;
+}
+.nav-link-nav{
+    margin:0;
+    padding: 10px;
+    font-size: 20px;
+    color:rgb(77, 77, 77);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.to-cerrar{
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    color: blueviolet;
+}
+
+.to-inicia{
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    color: blue;
+}
+
+.buttonVip{
+    border-radius: 5px;
+    background-color: rgb(216, 216, 216);
+    color:gray;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.conte{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.irHome .border{
+    position: absolute;
+    left: 0;
+    background: #acf789;
+    transition: transform var(--transition-duration) ease-in-out;
+}
+
+.irHome .border-top,
+.irHome .border-bottom {
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+}
+
+.irHome .border-left,
+.irHome .border-right {
+    width: 1px;
+    height: 100%;
+    transform: scaleY(0);
+}
+
+.irHome .border-top,
+.irHome .border-left,
+.irHome .border-right {
+    top: 0;
+}
+
+.irHome .border-bottom{
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.irHome .border-top{
+    transform-origin: top left;
+}
+
+.irHome .border-left{
+    transform-origin: bottom left;
+}
+
+.irHome .border-right{
+    left: auto;
+    right: 0;
+    transform-origin: top right;
+}
+
+:root {
+    --transition-duration: 0.2s;
+    --transition-delay: 0.2s;
+}
+
+.irHome:hover .border-top,
+.irHome:hover .border-bottom {
+    transform: scaleX(1);
+}
+
+.irHome:hover .border-left,
+.irHome:hover .border-right {
+    transform: scaleY(1);
+}
+
+.irHome:hover .border-right{
+    transition-delay: var(--transition-delay);
+}
+
+.irHome:hover .border-bottom{
+    transition-delay: calc(var(--transition-delay)*2);
+}
+
+.irHome:hover .border-left{
+    transition-delay: calc(var(--transition-delay)*3);
+}

@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .img{
+      width: 100%;
+      min-height: auto;
+  }
+  
+  .rotate-hor-center:hover {
+  -webkit-animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: rotate-hor-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    opacity: 0.5;
+  }
+  
